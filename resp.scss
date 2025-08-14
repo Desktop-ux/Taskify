@@ -1,0 +1,224 @@
+@media (min-width: 1020px) {
+
+    html {
+        font-size: clamp(16px, 1vw, 20px);
+        padding: clamp(1rem, 2vw, 2rem);
+        /* Fluid padding between 1rem and 2rem */
+
+    }
+
+
+    main {
+        padding: 0;
+        overflow-y: hidden;
+    }
+
+    .home-section {
+        width: 50%;
+        height: 100%;
+
+        .head {
+            padding: 0;
+
+            .menu {
+
+                img {
+                    width: 70%;
+                }
+            }
+
+            .notify {
+                font-size: 1.5rem;
+            }
+        }
+
+        .create {
+
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            button {
+                width: 7vw;
+                height: 7vw;
+            }
+        }
+
+        .timeline {
+
+
+            .box {
+                width: 7vw;
+                height: 6vw;
+            }
+        }
+
+        .tasks {
+            width: 100%;
+            height: 50%;
+            align-items: flex-start;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            padding: 1rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .delete , .completed{
+                width: 2vw;
+                height: 2vw;
+            }
+            
+            .task{
+                width: 40%;
+                
+                flex-wrap: nowrap;
+
+
+
+                .circle{
+                    width: 5vw;
+                    height: 5vw;
+                }
+
+                .tasktime{
+                    width: 60%;
+                    left: 40%;  
+                    padding: 0.5rem 1rem;
+                    
+                    h3{
+                        font-size: 0.75rem;
+                    }
+                    p{
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .new {
+        width: 50%;
+        padding: 0 1.5rem;
+
+        .back {
+
+            .icon1 {
+                font-size: 1.5rem;
+            }
+
+            .icon2 {
+                width: 4rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .heading {
+            padding: 1rem 0;
+
+            h1 {
+                font-size: 2rem;
+                line-height: 1;
+            }
+
+            i {
+                font-size: 4rem;
+                color: #439AE1;
+            }
+        }
+
+        .task_name {
+            h2 {
+                font-size: 1rem;
+                color: #439AE1;
+            }
+
+            #task_name {
+                font-size: 1rem;
+            }
+        }
+
+        .category{
+             h2 {
+            font-size: 1rem;
+            color: #439AE1;
+        }
+
+        }
+
+
+        .date {
+            padding: 0.5rem 0;
+
+            .input_date{
+                width: 50%;
+                h2{
+                    font-size: 1rem;
+                }
+
+                #calendar{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+         .duration{
+
+
+            .start,
+        .end{
+            width: 30%;
+
+
+            h2{
+                font-size: 1rem;
+            }
+
+            #start, #end{
+                font-size: 1rem;
+            }
+        }
+         }
+
+         .description{
+            margin-top: 1rem;
+
+            h2{
+                font-size: 1rem;
+            }
+
+            #desc{
+                width: 70%;
+                font-size: 1rem;
+            }
+         }
+
+         button.create{
+            font-size: 2rem;
+            font-weight: 500;
+         }
+    }
+
+    .notification{
+        width: 50%;
+        padding: 0;
+
+        .baclward{
+            font-size: 1rem;
+        }
+
+        .notecontainer{
+            height: 90%;
+
+            .note{
+                height: fit-content;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,156 @@
+@media (min-width: 1020px) {
+  html {
+    font-size: clamp(16px, 1vw, 20px);
+    padding: clamp(1rem, 2vw, 2rem);
+    /* Fluid padding between 1rem and 2rem */
+  }
+  main {
+    padding: 0;
+    overflow-y: hidden;
+  }
+  .home-section {
+    width: 50%;
+    height: 100%;
+  }
+  .home-section .head {
+    padding: 0;
+  }
+  .home-section .head .menu img {
+    width: 70%;
+  }
+  .home-section .head .notify {
+    font-size: 1.5rem;
+  }
+  .home-section .create h1 {
+    font-size: 2rem;
+  }
+  .home-section .create button {
+    width: 7vw;
+    height: 7vw;
+  }
+  .home-section .timeline .box {
+    width: 7vw;
+    height: 6vw;
+  }
+  .home-section .tasks {
+    width: 100%;
+    height: 50%;
+    align-items: flex-start;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .home-section .tasks .delete, .home-section .tasks .completed {
+    width: 2vw;
+    height: 2vw;
+  }
+  .home-section .tasks .task {
+    width: 40%;
+    flex-wrap: nowrap;
+  }
+  .home-section .tasks .task .circle {
+    width: 5vw;
+    height: 5vw;
+  }
+  .home-section .tasks .task .tasktime {
+    width: 60%;
+    left: 40%;
+    padding: 0.5rem 1rem;
+  }
+  .home-section .tasks .task .tasktime h3 {
+    font-size: 0.75rem;
+  }
+  .home-section .tasks .task .tasktime p {
+    font-size: 0.75rem;
+  }
+  .new {
+    width: 50%;
+    padding: 0 1.5rem;
+  }
+  .new .back .icon1 {
+    font-size: 1.5rem;
+  }
+  .new .back .icon2 {
+    width: 4rem;
+  }
+  .new .back .icon2 img {
+    width: 100%;
+  }
+  .new .heading {
+    padding: 1rem 0;
+  }
+  .new .heading h1 {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .new .heading i {
+    font-size: 4rem;
+    color: #439AE1;
+  }
+  .new .task_name h2 {
+    font-size: 1rem;
+    color: #439AE1;
+  }
+  .new .task_name #task_name {
+    font-size: 1rem;
+  }
+  .new .category h2 {
+    font-size: 1rem;
+    color: #439AE1;
+  }
+  .new .date {
+    padding: 0.5rem 0;
+  }
+  .new .date .input_date {
+    width: 50%;
+  }
+  .new .date .input_date h2 {
+    font-size: 1rem;
+  }
+  .new .date .input_date #calendar {
+    font-size: 1rem;
+  }
+  .new .duration .start,
+  .new .duration .end {
+    width: 30%;
+  }
+  .new .duration .start h2,
+  .new .duration .end h2 {
+    font-size: 1rem;
+  }
+  .new .duration .start #start, .new .duration .start #end,
+  .new .duration .end #start,
+  .new .duration .end #end {
+    font-size: 1rem;
+  }
+  .new .description {
+    margin-top: 1rem;
+  }
+  .new .description h2 {
+    font-size: 1rem;
+  }
+  .new .description #desc {
+    width: 70%;
+    font-size: 1rem;
+  }
+  .new button.create {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .notification {
+    width: 50%;
+    padding: 0;
+  }
+  .notification .baclward {
+    font-size: 1rem;
+  }
+  .notification .notecontainer {
+    height: 90%;
+  }
+  .notification .notecontainer .note {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}/*# sourceMappingURL=resp.css.map */

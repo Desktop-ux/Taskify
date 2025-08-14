@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resp.css">
+</head>
+
+<body>
+    <main>
+        <div class="notification">
+            <div class="backward">
+                <i class="fa-solid fa-angle-left"></i>
+              
+                <p>Clear All</p>
+            </div>
+
+            <div class="notecontainer">
+                <!-- <div class="note">
+                    <p>the task named _____ has been deleted due to end time</p>
+                </div> -->
+            </div>
+        </div>
+        <div class="new">
+            <div class="back">
+                <div class="icon1">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="icon2">
+                    <img src="menu-icon.png" alt="">
+                </div>
+            </div>
+            <div class="heading">
+                <h1>Create New Task</h1>
+                <i class="fa-regular fa-clipboard"></i>
+            </div>
+            <div class="task_name">
+                <h2>Task Name</h2>
+                <input type="text" id="task_name" autocomplete="off" placeholder="Enter your task name">
+            </div>
+            <div class="category">
+                <h2>Select Category</h2>
+                <div class="list">
+                    <button class="option">Personal</button>
+                    <button class="option">Work</button>
+                    <button class="option">Shopping</button>
+                    <button class="option">Wishlist</button>
+                    <button class="option">Study</button>
+                </div>
+            </div>
+            <div class="date">
+                <div class="input_date">
+                    <h2>Date</h2>
+                    <input type="date" name="date" id="calendar">
+                </div>
+            </div>
+            <div class="duration">
+                <div class="start">
+                    <h2>Start Time</h2>
+                    <input type="time" name="" id="start">
+                </div>
+                <div class="end">
+                    <h2>End Time</h2>
+                    <input type="time" name="" id="end">
+                </div>
+            </div>
+            <div class="description">
+                <h2>Description</h2>
+                <input type="text" id="desc" autocomplete="off" placeholder="Something about the task" maxlength="100" required
+                    minlength="10">
+            </div>
+            <button class="create"><span>Create Task</span></button>
+        </div>
+
+
+        <div class="home-section">
+            
+        <div class="head">
+            <div class="menu">
+                <img src="menu-icon.png" alt="">
+            </div>
+            <div class="notify"><i class="fa-regular fa-bell"></i></div>
+        </div>
+
+        <div class="create">
+            <h1>Taskify</h1>
+            <button class="add"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <div class="time">
+            <h2 class="label">Today</h2>
+            <p>Monday, 1 June</p>
+        </div>
+
+        <div class="timeline">
+
+            <div id="sun" class="box" data-date="2025-08-06">
+                <h3 class="count">01</h3>
+                <p>Sun</p>
+            </div>
+
+            <div id="mon" class="box" data-date="2025-08-06">
+                <h3 class="count">02</h3>
+                <p>Mon</p>
+            </div>
+            <div id="tue" class="box" data-date="2025-08-06">
+                <h3 class="count">03</h3>
+                <p>Tue</p>
+            </div>
+            <div id="wed" class="box" data-date="2025-08-06">
+                <h3 class="count">04</h3>
+                <p>Wed</p>
+            </div>
+            <div id="thu" class="box" data-date="2025-08-06">
+                <h3 class="count">05</h3>
+                <p>Thu</p>
+            </div>
+            <div id="fri" class="box" data-date="2025-08-06">
+                <h3 class="count">06</h3>
+                <p>Fri</p>
+            </div>
+            <div id="sat" class="box" data-date="2025-08-06">
+                <h3 class="count">07</h3>
+                <p>Sat</p>
+            </div>
+
+        </div>
+
+
+        <div class="tasks">
+            <!-- <div class="task">
+                <div class="circle">
+                    <img src="wishlist.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h2>Task Name</h2>
+                    <p>description</p>
+                </div>
+                <div class="tasktime">
+                    <h3>a</h3>
+                    <h3>c</h3>
+                </div>
+            </div> -->
+
+
+            <!-- <div class="task">
+                <div class="delete">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="completed">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="finish"></div>
+                <div class="circle">
+                    <img src="${iconSrc}" alt="${taskcat}">
+                </div>
+                <div class="details">
+                    <h2>${title}</h2>
+                    <p>${description}</p>
+                </div>
+                <div class="tasktime">
+                    <h3>${taskdate}</h3>
+                    <h3>${tasktime}</h3>
+                </div>
+            </div>
+            <div class="notask"><span>No tasks created</span></div> -->
+        </div>
+
+        </div>
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
