@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="resp.css">
 </head>
 
 <body>
+
+    <div class="intro">
+        <h1 class="introh1">Taskify</h1>
+    </div>
+
+
     <main>
         <div class="notification">
             <div class="backward">
                 <i class="fa-solid fa-angle-left"></i>
-              
+
                 <p>Clear All</p>
             </div>
 
@@ -73,72 +79,70 @@
             </div>
             <div class="description">
                 <h2>Description</h2>
-                <input type="text" id="desc" autocomplete="off" placeholder="Something about the task" maxlength="100" required
-                    minlength="10">
+                <input type="text" id="desc" autocomplete="off" placeholder="Something about the task" maxlength="100"
+                    required minlength="10">
             </div>
             <button class="create"><span>Create Task</span></button>
         </div>
-
-
         <div class="home-section">
-            
-        <div class="head">
-            <div class="menu">
-                <img src="menu-icon.png" alt="">
-            </div>
-            <div class="notify">
-                <div class="red"></div>
-                <i class="fa-regular fa-bell"></i>
-            </div>
-        </div>
 
-        <div class="create">
-            <h1>Taskify</h1>
-            <button class="add"><i class="fa-solid fa-plus"></i></button>
-        </div>
-
-        <div class="time">
-            <h2 class="label">Today</h2>
-            <p>Monday, 1 June</p>
-        </div>
-
-        <div class="timeline">
-
-            <div id="sun" class="box" data-date="2025-08-06">
-                <h3 class="count">01</h3>
-                <p>Sun</p>
+            <div class="head">
+                <div class="menu">
+                    <img src="menu-icon.png" alt="">
+                </div>
+                <div class="notify">
+                    <div class="red"></div>
+                    <i class="fa-regular fa-bell"></i>
+                </div>
             </div>
 
-            <div id="mon" class="box" data-date="2025-08-06">
-                <h3 class="count">02</h3>
-                <p>Mon</p>
-            </div>
-            <div id="tue" class="box" data-date="2025-08-06">
-                <h3 class="count">03</h3>
-                <p>Tue</p>
-            </div>
-            <div id="wed" class="box" data-date="2025-08-06">
-                <h3 class="count">04</h3>
-                <p>Wed</p>
-            </div>
-            <div id="thu" class="box" data-date="2025-08-06">
-                <h3 class="count">05</h3>
-                <p>Thu</p>
-            </div>
-            <div id="fri" class="box" data-date="2025-08-06">
-                <h3 class="count">06</h3>
-                <p>Fri</p>
-            </div>
-            <div id="sat" class="box" data-date="2025-08-06">
-                <h3 class="count">07</h3>
-                <p>Sat</p>
+            <div class="create">
+                <h1>Taskify</h1>
+                <button class="add"><i class="fa-solid fa-plus"></i></button>
             </div>
 
-        </div>
+            <div class="time">
+                <h2 class="label">Today</h2>
+                <p>Monday, 1 June</p>
+            </div>
+
+            <div class="timeline">
+
+                <div id="sun" class="box" data-date="2025-08-06">
+                    <h3 class="count">01</h3>
+                    <p>Sun</p>
+                </div>
+
+                <div id="mon" class="box" data-date="2025-08-06">
+                    <h3 class="count">02</h3>
+                    <p>Mon</p>
+                </div>
+                <div id="tue" class="box" data-date="2025-08-06">
+                    <h3 class="count">03</h3>
+                    <p>Tue</p>
+                </div>
+                <div id="wed" class="box" data-date="2025-08-06">
+                    <h3 class="count">04</h3>
+                    <p>Wed</p>
+                </div>
+                <div id="thu" class="box" data-date="2025-08-06">
+                    <h3 class="count">05</h3>
+                    <p>Thu</p>
+                </div>
+                <div id="fri" class="box" data-date="2025-08-06">
+                    <h3 class="count">06</h3>
+                    <p>Fri</p>
+                </div>
+                <div id="sat" class="box" data-date="2025-08-06">
+                    <h3 class="count">07</h3>
+                    <p>Sat</p>
+                </div>
+
+            </div>
 
 
-        <div class="tasks">
-            <!-- <div class="task">
+            <div class="tasks">
+                <!-- <div class="task">
                 <div class="circle">
                     <img src="wishlist.jpg" alt="">
                 </div>
@@ -153,7 +157,7 @@
             </div> -->
 
 
-            <!-- <div class="task">
+                <!-- <div class="task">
                 <div class="delete">
                     <i class="fa-solid fa-xmark"></i>
                 </div>
@@ -174,7 +178,7 @@
                 </div>
             </div>
             <div class="notask"><span>No tasks created</span></div> -->
-        </div>
+            </div>
 
         </div>
     </main>
