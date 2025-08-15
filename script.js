@@ -383,7 +383,7 @@ add_task.addEventListener("click", function (e) {
 });
 
 
-
+let notify_signal = document.querySelector(".red")
 
 
 setInterval(() => {
@@ -433,6 +433,7 @@ setInterval(() => {
     if (document.querySelectorAll(".task").length === 0) {
          localStorage.removeItem("tasks", JSON.stringify(tasks));
         add_task.innerHTML = `<div class="notask"><span>No tasks created</span></div>`;
+        notify_signal.style.display = "block"
     }
         }
     });
@@ -449,6 +450,7 @@ clearAllNotify.addEventListener("click", function(){
     // let savedNotes = localStorage.getItem("taskNotifications");
     notes.innerHTML = ""
     localStorage.removeItem("taskNotifications")
+    notify_signal.style.display = "none"
     
 })
 

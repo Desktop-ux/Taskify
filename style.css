@@ -47,6 +47,20 @@ main {
 .head .notify {
   color: #439AE1;
   font-size: 2.25rem;
+  position: relative;
+}
+.head .notify .red {
+  width: 3vw;
+  height: 3vw;
+  background-color: red;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  display: none;
+  transition: all 0.5s ease-in-out;
 }
 
 .create {

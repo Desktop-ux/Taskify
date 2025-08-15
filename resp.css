@@ -21,6 +21,10 @@
   .home-section .head .notify {
     font-size: 1.5rem;
   }
+  .home-section .head .notify .red {
+    width: 0.75vw;
+    height: 0.75vw;
+  }
   .home-section .create h1 {
     font-size: 2rem;
   }
