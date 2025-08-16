@@ -1,4 +1,4 @@
-let body = document.querySelector("body")
+let body = document.querySelector("main")
 let intrologo = document.querySelector(".introh1")
 let intro = document.querySelector(".intro")
 
